@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de ErikokGabo</title>
+</head>
+
+<body>
+    <div style="margin: 24px;">
+        <nav class="navbar navar-ligth" style="background-color:rgb(147, 143, 156);">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="color: black;">Inicio</a>
+                <div class="collapse navbar-collapse" id="navbaeNavDropdown">
+                    <ul class="nav naver-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropMenuLInk" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Unidad 1</a>
+                            <div class="dropDown-menu" aria-describedby="navbarDripDownMenuLink">
+                                <a class="dropdown-item" href="perfil.html">perfil</a><br>
+                                <a class="dropdown-item" href="calculadora.html">calculadora</a><br>
+                                <a class="dropdown-item" href="tienda.html">tienda parte 1</a><br>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropMenuLInk" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Unidad 2</a>
+                            <div class="dropDown-menu" aria-describedby="navbarDripDownMenuLink">
+                                <a class="dropdown-item" href="tiendapedido.html">tienda pedido</a><br>
+                                <a class="dropdown-item" href="json.html">Json</a><br>
+                                <a class="dropdown-item" href="tiendapedido2.html">tienda pedido 2</a><br>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropMenuLInk" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Unidad 3</a>
+                            <div class="dropDown-menu" aria-describedby="navbarDripDownMenuLink">
+                                <a class="dropdown-item" href="basededatos.html">base de datos</a><br>
+                                <a class="dropdown-item" href="peliculas.html">peliculas</a><br>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: grid;
+            place-items: center;
+            background-image: linear-gradient(to right, rgb(110, 29, 216));
+            height: 100vh;
+        }
+        .calc{
+            width: 30%;
+            height: 60%;
+            background-color: transparent;
+            position: absolute;
+            border: 2px solid rgb(10, 10, 10)
+            border-radius: 10px;
+        }
+    </style>
+    <input type="text" id="ans">
+    <div class="btn">
+        <input type="button" value="C" onclick="Clear()">
+        <input type="button" value="%" onclick="Solve('%')">
+        <input type="button" value="←" onclick="Solve('←')">
+        <input type="button" value="/" onclick="Solve('/')">
+        <br>
+        <input type="button" value="7" onclick="Solve('7')">
+        <input type="button" value="8" onclick="Solve('8')">
+        <input type="button" value="9" onclick="Solve('9')">
+        <input type="button" value="x" onclick="Solve('*')">
+        <br>
+        <input type="button" value="4" onclick="Solve('4')">
+        <input type="button" value="5" onclick="Solve('5')">
+        <input type="button" value="6" onclick="Solve('6')">
+        <input type="button" value="-" onclick="Solve('-')">
+        <br>
+        <input type="button" value="1" onclick="Solve('1')">
+        <input type="button" value="2" onclick="Solve('2')">
+        <input type="button" value="3" onclick="Solve('3')">
+        <input type="button" value="+" onclick="Solve('+')">
+        <br>
+        <input type="button" value="0" onclick="Solve('00')">
+        <input type="button" value="2" onclick="Solve('0')">
+        <input type="button" value="3" onclick="Solve('.')">
+        <input type="button" value="+" onclick="Result()">
+        <br>
+    </div>
+
+
+</body>
+
+</html>
